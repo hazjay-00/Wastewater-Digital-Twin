@@ -1,4 +1,4 @@
-                      Smart Wastewater Facility – Process Digital Twin
+Project Name: Smart Wastewater Facility – Process Digital Twin
 
 Overview: An interactive Streamlit dashboard and Machine Learning digital twin built to predict Chemical Oxygen Demand (COD) levels in wastewater treatment plants using the UCI Machine Learning dataset.
 
@@ -8,7 +8,7 @@ Key Features:
   
   ii) Predictive ML Simulation: Forecasts effluent water quality and alerts users to environmental compliance breaches or toxic shock loads.
   
-  iii) Explainable AI (XAI): Visual feature importance charts detailing which incoming variables drive predictions.
+  iii) Explainable AI: Visual feature importance charts detailing which incoming variables drive predictions.
   
   iv) Multi-Stage Process Kinetics: Visualizes water quality across raw inflow, primary settling (transient), and final effluent (steady-state).
   

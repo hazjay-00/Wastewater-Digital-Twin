@@ -8,9 +8,9 @@ from sklearn.metrics import r2_score, root_mean_squared_error
 
 # PAGE LAYOUT CONFIGURATION
 
-st.set_page_config(page_title="Industrial Digital Twin", layout="wide")
+st.set_page_config(page_title="Industrial Digital Twin - Version 3", layout="wide")
 
-st.title("Smart Wastewater Facility - Academic Process Digital Twin")
+st.title("Smart Wastewater Facility - Process Digital Twin")
 st.markdown("---")
 
 # MACHINE LEARNING ENGINE
@@ -18,7 +18,7 @@ st.markdown("---")
 @st.cache_resource
 def run_and_train_engine():
     # File Pathway Link Configuration
-    data_source_url = r"C:\Users\Admin\OneDrive\Desktop\Wastewater Digital Twin\water+treatment+plant\water-treatment.data"
+    data_source_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/water-treatment/water-treatment.data"
 
     # Define actual engineering sensor categories based on plant schematics
     columns = [
@@ -176,6 +176,6 @@ csv_buffer = log_data.to_csv(index=False).encode('utf-8')
 st.download_button(
     label="Download Current Simulation Scenario Log File (.CSV)",
     data=csv_buffer,
-    file_name="digital_twin_simulation_run.csv",
+    file_name="simulation_run_v3.csv",
     mime="text/csv"
 )

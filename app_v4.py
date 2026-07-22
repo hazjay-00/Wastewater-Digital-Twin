@@ -9,16 +9,16 @@ from sklearn.metrics import r2_score, root_mean_squared_error
 
 # PAGE LAYOUT CONFIGURATION
 
-st.set_page_config(page_title="Dual-Horizon Digital Twin", layout="wide")
+st.set_page_config(page_title="Industrial Digital Twin - Version 4", layout="wide")
 
-st.title("Industrial Wastewater Facility - Dual-Horizon Process Digital Twin")
+st.title("Smart Wastewater Facility - Process Digital Twin")
 st.markdown("---")
 
 # DUAL-MACHINE LEARNING PIPELINE ENGINE
 
 @st.cache_resource
 def run_and_train_dual_engine():
-    data_source_url = r"C:\Users\Admin\OneDrive\Desktop\Wastewater Digital Twin\water+treatment+plant\water-treatment.data"
+    data_source_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/water-treatment/water-treatment.data"
 
     columns = [
         'Q_E', 'ZN_E', 'PH_E', 'DBO_E', 'DQO_E', 'SS_E', 'SSV_E', 'SED_E', 'COND_E',
@@ -177,8 +177,8 @@ st.dataframe(log_data, use_container_width=True, hide_index=True)
 # Convert log data to downloadable CSV format configuration
 csv_buffer = log_data.to_csv(index=False).encode('utf-8')
 st.download_button(
-    label="📥 Download Current Simulation Scenario Log File (.CSV)",
+    label="Download Current Simulation Scenario Log File (.CSV)",
     data=csv_buffer,
-    file_name="digital_twin_simulation_run.csv",
+    file_name="simulation_run_v4.csv",
     mime="text/csv"
 )

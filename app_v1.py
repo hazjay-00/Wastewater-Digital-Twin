@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from sklearn.ensemble import RandomForestRegressor
 
 # PAGE LAYOUT CONFIGURATION
-st.set_page_config(page_title="Industrial Digital Twin", layout="wide")
+st.set_page_config(page_title="Industrial Digital Twin - Version 1", layout="wide")
 
 st.title("Smart Wastewater Facility - Process Digital Twin")
 st.markdown("---")

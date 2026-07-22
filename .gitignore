@@ -1,0 +1,15 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# Environment Variables / Secrets
+.env
+
+# Optional: Data files (if large or private)
+*.data
+*.csv

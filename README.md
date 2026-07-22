@@ -28,10 +28,10 @@ Iterative Evolution and Version Progression:
 
 Tech Stack and Data Source:
 
-UI/Dashboard: Streamlit
+  UI/Dashboard: Streamlit
 
-Data Processing & ML: Pandas, NumPy, Scikit-Learn
+  Data Processing & ML: Pandas, NumPy, Scikit-Learn
 
-Data Visualization: Plotly Express & Graph Objects
+  Data Visualization: Plotly Express & Graph Objects
 
-Dataset: UCI Machine Learning Repository – Water Treatment Plant Dataset
+  Dataset: UCI Machine Learning Repository – Water Treatment Plant Dataset

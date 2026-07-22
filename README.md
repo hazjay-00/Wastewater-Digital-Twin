@@ -14,7 +14,7 @@ Key Features:
   
   v) Data Export: Capability to download current simulation scenarios into .CSV logs for laboratory record-keeping.
 
-Iterative Evolution & Version Progression:
+Iterative Evolution and Version Progression:
  
   i) Version 1 (v1): Minimal proof-of-concept with 4 basic inputs and a single Random Forest regressor.
  
@@ -26,7 +26,7 @@ Iterative Evolution & Version Progression:
   
   v) Version 5 (v5): Expanded to an 8-dimensional input matrix (including Zinc, BOD, Suspended Solids) and applied hyperparameter tuning (max_depth, min_samples_split).
 
-Tech Stack & Data Source:
+Tech Stack and Data Source:
 
 UI/Dashboard: Streamlit
 Data Processing & ML: Pandas, NumPy, Scikit-Learn

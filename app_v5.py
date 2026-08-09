@@ -72,7 +72,6 @@ m_transient, r2_t, rmse_t, m_steady, r2_s, rmse_s, feature_importance_data = run
 # INTERACTIVE COMPREHENSIVE CONTROL KNOBS
 
 st.sidebar.header("Comprehensive Control Knobs")
-st.sidebar.markdown("Manipulate the 8 dimensional wastewater input chemistry matrix.")
 
 input_flow = st.sidebar.slider("Wastewater Inflow Rate (m³/day)", 10000, 60000, 37000)
 input_zn = st.sidebar.slider("Incoming Zinc Levels (mg/L)", 0.0, 15.0, 2.5, 0.1)

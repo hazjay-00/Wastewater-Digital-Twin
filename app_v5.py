@@ -9,7 +9,7 @@ from sklearn.metrics import r2_score, root_mean_squared_error
 
 # PAGE LAYOUT CONFIGURATION
 
-st.set_page_config(page_title="Industrial Digital Twin - Version 5", layout="wide")
+st.set_page_config(page_title="Smart Wastewater Facility - Process Digital Twin (Version 5)", layout="wide")
 
 st.title("Smart Wastewater Facility - Process Digital Twin")
 st.markdown("---")
@@ -36,7 +36,7 @@ def run_and_train_engine():
     y_transient = df['DQO_D']  # Intermediate Primary/Sediment Settling Output
     y_steady = df['DQO_S']     # Final Outgoing Treated Effluent Quality
     
-    # --- Transient Model Training (Out-of-sample Testing) ---
+    # Transient Model Training (Out-of-sample Testing) 
     X_train_t, X_test_t, y_train_t, y_test_t = train_test_split(X, y_transient, test_size=0.2, random_state=42)
     model_transient = RandomForestRegressor(n_estimators=150, max_depth=15, min_samples_split=5, random_state=42)
     model_transient.fit(X_train_t, y_train_t)
@@ -45,7 +45,7 @@ def run_and_train_engine():
     r2_transient = r2_score(y_test_t, y_pred_t)
     rmse_transient = root_mean_squared_error(y_test_t, y_pred_t)
     
-    # --- Steady-State Model Training (In-sample Baseline) ---
+    # Steady-State Model Training (In-sample Baseline) 
     model_steady = RandomForestRegressor(n_estimators=150, max_depth=15, min_samples_split=5, random_state=42)
     model_steady.fit(X, y_steady)
     

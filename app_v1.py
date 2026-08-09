@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from sklearn.ensemble import RandomForestRegressor
 
 # PAGE LAYOUT CONFIGURATION
-st.set_page_config(page_title="Industrial Digital Twin - Version 1", layout="wide")
+st.set_page_config(page_title="Smart Wastewater Facility - Process Digital Twin (Version 1)", layout="wide")
 
 st.title("Smart Wastewater Facility - Process Digital Twin")
 st.markdown("---")
@@ -54,7 +54,7 @@ input_ph = st.sidebar.slider("Incoming Wastewater pH", min_value=6.5, max_value=
 input_cod = st.sidebar.slider("Incoming Chemical Oxygen Demand (COD mg/L)", min_value=100, max_value=600, value=400)
 input_cond = st.sidebar.slider("Incoming Conductivity (µS/cm)", min_value=500, max_value=3000, value=1500)
 
-# 4. DIGITAL TWIN PREDICTIVE SIMULATION
+# DIGITAL TWIN PREDICTIVE SIMULATION
 
 # Convert current physical slider settings into a clean table row for processing
 current_status = pd.DataFrame([[input_flow, input_ph, input_cod, input_cond]], columns=['Q_E', 'PH_E', 'DQO_E', 'COND_E'])

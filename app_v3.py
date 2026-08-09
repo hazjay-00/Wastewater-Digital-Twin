@@ -62,7 +62,6 @@ twin_model, model_r2, model_rmse, feature_importance_data = run_and_train_engine
 # INTERACTIVE  CONTROL KNOBS
 
 st.sidebar.header("Physical Plant Control Knobs")
-st.sidebar.markdown("Manipulate incoming wastewater parameters to simulate real-time operations.")
 
 # Build interactive slider knobs
 input_flow = st.sidebar.slider("Wastewater Inflow Rate (m³/day)", min_value=10000, max_value=60000, value=37000)

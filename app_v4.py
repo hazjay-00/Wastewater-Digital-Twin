@@ -93,7 +93,7 @@ LEGAL_MAX_COD = 120.0
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("Transient / Immediate Analysis")
+    st.subheader("Transient Analysis")
     st.metric(label="Predicted Primary Settling Output COD", value=f"{pred_transient:.2f} mg/L")
     st.caption("Forecasts fluid chemistry changes right after the first primary processing stage.")
     
@@ -104,7 +104,7 @@ with col1:
         st.success("INFLUX SAFE: Plant infrastructure coping with current load speeds.")
 
 with col2:
-    st.subheader("Steady-State / Matured Compliance")
+    st.subheader("Steady-State Analysis")
     st.metric(label="Predicted Final Effluent Output COD", value=f"{pred_steady:.2f} mg/L")
     st.caption("Forecasts final water cleanliness variables after full process retention time cycles.")
     

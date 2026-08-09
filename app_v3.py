@@ -123,7 +123,7 @@ with chart_col1:
 
 with chart_col2:
     # Feature Importance Chart
-    st.markdown("### AI Explainability: Feature Weights")
+    st.markdown("### Feature Weights")
     fig_importance = px.bar(
         feature_importance_data,
         x='Importance Weight',
@@ -138,7 +138,7 @@ with chart_col2:
 # METRICS SECTION
 
 st.markdown("---")
-st.markdown("### Academic Core Verification Metrics")
+st.markdown("### Verification Metrics")
 metric_col1, metric_col2, metric_col3 = st.columns(3)
 
 with metric_col1:

@@ -100,7 +100,7 @@ LEGAL_MAX_COD = 120.0
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("Transient Horizon (Immediate Shock-Load)")
+    st.subheader("Transient Analysis")
     st.metric(label="Predicted Primary Settling Output COD", value=f"{pred_transient:.2f} mg/L")
     
     # Anomaly Rule Trigger
@@ -110,7 +110,7 @@ with col1:
         st.success("INFLUX NORMAL: Incoming chemistry safely within primary tank load capacities.")
 
 with col2:
-    st.subheader("Steady-State Horizon (Matured Compliance)")
+    st.subheader("Steady-State Analysis")
     st.metric(label="Predicted Final Effluent Output COD", value=f"{pred_steady:.2f} mg/L")
     
     if pred_steady > LEGAL_MAX_COD:
@@ -135,7 +135,7 @@ with chart_col1:
     st.plotly_chart(fig, use_container_width=True)
 
 with chart_col2:
-    st.markdown("### AI Explainability: 8-Feature Weights")
+    st.markdown("### 8-Feature Weights")
     fig_importance = px.bar(
         feature_importance_data, x='Importance Weight', y='Chemical Parameter',
         orientation='h', color='Importance Weight', color_continuous_scale='Viridis'
@@ -146,7 +146,7 @@ with chart_col2:
 # MODEL PERFORMANCE EVALUATION MATRIX
 
 st.markdown("---")
-st.markdown("### Integrated Academic Model Performance Evaluation")
+st.markdown("### Model Performance Evaluation")
 m_col1, m_col2 = st.columns(2)
 
 with m_col1:

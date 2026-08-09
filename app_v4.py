@@ -130,7 +130,7 @@ with chart_col1:
     st.plotly_chart(fig, use_container_width=True)
 
 with chart_col2:
-    st.markdown("### AI Explainability: Feature Weights")
+    st.markdown("### Feature Weights")
     fig_importance = px.bar(
         feature_importance_data, x='Importance Weight', y='Chemical Parameter',
         orientation='h', color='Importance Weight', color_continuous_scale='Viridis'
@@ -141,7 +141,7 @@ with chart_col2:
 # METRICS SECTION
 
 st.markdown("---")
-st.markdown("### Academic Core Model Validation Comparison")
+st.markdown("### Model Validation Comparison")
 m_col1, m_col2 = st.columns(2)
 
 with m_col1:

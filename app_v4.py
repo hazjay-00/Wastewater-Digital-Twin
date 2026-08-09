@@ -71,7 +71,6 @@ m_transient, r2_t, rmse_t, m_steady, r2_s, rmse_s, feature_importance_data = run
 # INTERACTIVE PROCESS CONTROL KNOBS
 
 st.sidebar.header("Physical Plant Control Knobs")
-st.sidebar.markdown("Manipulate incoming wastewater parameters to simulate real-time operations.")
 
 input_flow = st.sidebar.slider("Wastewater Inflow Rate (m³/day)", min_value=10000, max_value=60000, value=37000)
 input_ph = st.sidebar.slider("Incoming Wastewater pH", min_value=6.0, max_value=9.0, value=7.8, step=0.1)

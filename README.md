@@ -26,8 +26,8 @@ An interactive Streamlit dashboard and Machine Learning digital twin built to pr
 ---
 
 **Note on Evaluation Methodology:** 
-* **Steady-State Pipeline (v3, v4, v5):** Evaluates in-sample fitting against baseline historical operational data to represent continuous equilibrium.
-* **Transient Pipeline (v2, v4, v5):** Evaluates out-of-sample generalization via train/test splitting to measure generalizability under dynamic load variations.
+* **Steady-State Models (v3, v4, v5):** Evaluates in-sample fitting against baseline historical operational data to represent continuous equilibrium.
+* **Transient Models (v2, v4, v5):** Evaluates out-of-sample generalization via train/test splitting to measure generalizability under dynamic load variations.
 
 ---
 

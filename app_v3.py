@@ -8,7 +8,7 @@ from sklearn.metrics import r2_score, root_mean_squared_error
 
 # PAGE LAYOUT CONFIGURATION
 
-st.set_page_config(page_title="Industrial Digital Twin - Version 3", layout="wide")
+st.set_page_config(page_title="Smart Wastewater Facility - Process Digital Twin (Version 3)", layout="wide")
 
 st.title("Smart Wastewater Facility - Process Digital Twin")
 st.markdown("---")
